@@ -1,0 +1,33 @@
+{
+  "schema": "riverbraid.gold.protocol.steps",
+  "version": "1.0.0",
+  "repo": "Riverbraid-Discovery-Gold",
+  "ring": 1,
+  "petal": "Discovery-Gold",
+  "invariant": "DISCOVERY_STATIONARY",
+  "claim_boundary": "declared-conditions-only",
+  "canonical_input": {
+    "repo": "Riverbraid-Discovery-Gold",
+    "petal": "Discovery-Gold",
+    "ring": 1,
+    "invariant": "DISCOVERY_STATIONARY"
+  },
+  "expected_result": true,
+  "steps": [
+    "receive canonical stationarity object",
+    "require repo to equal Riverbraid-Discovery-Gold",
+    "require petal to equal Discovery-Gold",
+    "require ring to equal 1",
+    "require invariant to equal DISCOVERY_STATIONARY",
+    "emit deterministic verification output"
+  ],
+  "forbidden": [
+    "Date",
+    "Math.random",
+    "randomUUID",
+    "timestamps",
+    "absolute paths",
+    "environment dependent values",
+    "external lookups"
+  ]
+}
